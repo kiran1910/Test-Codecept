@@ -19,8 +19,6 @@ branches:
 
 before_script:
     - mysql -e 'create database test_codecept;'
-    - travis_retry composer self-update
-    - travis_retry composer install --prefer-source --no-interaction --dev
     - php -S localhost:8000 -t public &
     - sleep 5 # give artisan serve some time to start
     - php codecept.phar build
