@@ -1,0 +1,15 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - PhpBrowser:
+            url: http://localhost:1337
+        - REST:
+            url: http://localhost:1337/test_automation/test_automation
+            depends: PhpBrowser
+        - Db:
+            dsn: 'mysql:host=localhost;dbname=test_codecept'
+            user: 'root'
+            password: ''
+            populate: false
+            cleanup: false
