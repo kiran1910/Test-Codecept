@@ -3,9 +3,9 @@ modules:
     enabled:
         - \Helper\Api
         - PhpBrowser:
-            url: http://localhost:8000
+            url: http://localhost
         - REST:
-            url: http://localhost:8000/Test-Codecept
+            url: http://localhost/Test-Codecept
             depends: PhpBrowser
         - Db:
             dsn: 'mysql:host=localhost;dbname=test_codecept'
