@@ -14,6 +14,7 @@ branches:
 
 before_script:
     - mysql -e 'create database test_codecept;'
+    - php -S localhost &
     - php codecept.phar build
 
 script:
