@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-	RewriteRule ^test_automation/(.*)$ /test_automation/api.php?_url=$1&%{QUERY_STRING} [NC,L]
+	RewriteRule ^test_automation/(.*)$ /Test-Codecept/api.php?_url=$1&%{QUERY_STRING} [NC,L]
 
 </IfModule>

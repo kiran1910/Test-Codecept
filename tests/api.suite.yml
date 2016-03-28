@@ -5,7 +5,7 @@ modules:
         - PhpBrowser:
             url: http://localhost:8000
         - REST:
-            url: http://localhost:8000/test_automation/test_automation
+            url: http://localhost:8000/Test-Codecept/test_automation
             depends: PhpBrowser
         - Db:
             dsn: 'mysql:host=localhost;dbname=test_codecept'
