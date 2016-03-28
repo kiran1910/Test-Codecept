@@ -1,6 +1,6 @@
 <?php 
 $I = new ApiTester($scenario);
-$I->wantTo('create a user');
+$I->wantTo('Api to create a user');
 $I->haveHttpHeader('Content-Type', 'application/json');
 $I->sendPOST('/users', ['user_name' => 'Mahesh1']);
 $I->seeResponseCodeIs(200);
