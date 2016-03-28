@@ -10,7 +10,7 @@ branches:
     only:
         - master
 
-sudo: false
+sudo: true
 
 before_script:
     - curl --version
