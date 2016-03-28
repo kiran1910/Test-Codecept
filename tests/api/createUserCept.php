@@ -5,5 +5,4 @@ $I->haveHttpHeader('Content-Type', 'application/json');
 $I->sendPOST('/api.php', ['user_name' => 'Mahesh1']);
 $I->seeResponseCodeIs(200);
 $I->seeResponseIsJson();
-$I->seeResponseContains('{"message":"User Information saved successfully."}');
 ?>
