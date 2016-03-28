@@ -3,9 +3,9 @@ modules:
     enabled:
         - \Helper\Api
         - PhpBrowser:
-            url: http://localhost:1337
+            url: http://localhost:8000
         - REST:
-            url: http://localhost:1337/test_automation/test_automation
+            url: http://localhost:8000/test_automation/test_automation
             depends: PhpBrowser
         - Db:
             dsn: 'mysql:host=localhost;dbname=test_codecept'
