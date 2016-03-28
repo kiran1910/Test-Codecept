@@ -11,5 +11,6 @@ modules:
             dsn: 'mysql:host=localhost;dbname=test_codecept'
             user: 'root'
             password: ''
-            populate: false
-            cleanup: false
+            dump: 'tests/_data/dump.sql'
+            populate: true
+            cleanup: true
