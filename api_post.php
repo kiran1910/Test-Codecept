@@ -15,7 +15,6 @@ function api_post($r_post)
         $response['message'] = 'Error in saving user information.';
     }
 
-    header('Content-type: application/json');
     echo json_encode($response);
 }
 
