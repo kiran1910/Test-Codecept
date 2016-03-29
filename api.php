@@ -10,9 +10,8 @@ function main() {
         break;
 
     case 'POST':
-        $r_post = json_decode(file_get_contents('php://input'), true);
         require_once("api_post.php");
-        api_post($r_post);
+        api_post();
         break;
     }
 }
