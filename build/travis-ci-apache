@@ -17,6 +17,11 @@
     Alias /php5-fcgi /usr/lib/cgi-bin/php5-fcgi
     FastCgiExternalServer /usr/lib/cgi-bin/php5-fcgi -host 127.0.0.1:9000 -pass-header Authorization
   </IfModule>
+  
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteRule ^test_codecept/(.*)$ /api.php?_url=$1&%{QUERY_STRING} [NC,L]
+  </IfModule>
 
   # [...]
 </VirtualHost>
