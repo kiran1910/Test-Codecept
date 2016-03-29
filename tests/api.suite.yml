@@ -5,7 +5,7 @@ modules:
         - PhpBrowser:
             url: http://localhost
         - REST:
-            url: http://localhost/api.php
+            url: http://localhost/test_codecept
             depends: PhpBrowser
         - Db:
             dsn: 'mysql:host=localhost;dbname=test_codecept'
