@@ -1,6 +1,6 @@
 <?php
 
-function api_post($r_post)
+function api_post()
 {
     global $myConnection;
 
