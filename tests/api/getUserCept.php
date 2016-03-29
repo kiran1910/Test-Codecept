@@ -1,7 +1,7 @@
 <?php 
 $I = new ApiTester($scenario);
 $I->wantTo('get all available users');
-$I->sendGET('/api.php');
+$I->sendGET('/users');
 $I->seeResponseCodeIs(200);
 $I->seeResponseIsJson();
 ?>
