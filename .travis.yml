@@ -31,6 +31,7 @@ before_script:
     - mysql -e 'create database test_codecept;'
     - php -S localhost:8000 -t public/ &
     - sleep 5
+    - curl -v "http://localhost"
     - php codecept.phar build
 
 script:
